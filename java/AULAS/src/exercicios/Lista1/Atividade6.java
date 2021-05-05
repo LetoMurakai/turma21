@@ -21,6 +21,6 @@ public class Atividade6 {
 
 		double distancia =Math.sqrt((Math.pow((x2 - x1),2.0) + Math.pow((y2 - y1),2.0)));
 
-		System.out.print("A distancia entre os pontos é de " +distancia);
+		System.out.print("A distancia entre os pontos é de "+distancia);
 	}
 }
