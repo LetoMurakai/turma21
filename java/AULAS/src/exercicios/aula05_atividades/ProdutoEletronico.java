@@ -9,21 +9,10 @@ public class ProdutoEletronico {
 	public boolean funcionando;
 	public char funciona = ' ';
 	
-	public ProdutoEletronico(String nomeProduto, String tipoProduto, String marca, double precoProduto,boolean funcionando) {
-		super();
+	public ProdutoEletronico(String nomeProduto, String tipoProduto, String marca, double precoProduto) {
 		this.nomeProduto = nomeProduto;
 		this.tipoProduto = tipoProduto;
 		this.marca = marca;
 		this.precoProduto = precoProduto;
-		this.funcionando = funcionando;
 	}
-	public void funciona() {
-		if(funciona == 'S') {
-			funcionando = true;
-			System.out.println("Aparelho funcionando!!!");
-		}else {
-			System.out.println("Pane no sistema!!!!!!");
-		}
-	}
-	
 }
