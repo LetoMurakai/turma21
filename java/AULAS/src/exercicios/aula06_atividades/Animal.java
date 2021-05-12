@@ -1,27 +1,33 @@
 package exercicios.aula06_atividades;
 
-public class Animal {
-	//Atributos
+public abstract class Animal {
+	// Atributos
 	private String nome;
 	private int idade;
-	
-	//construtor
-	public Animal(String nome, int idade) {
-		this.nome = nome;
-		this.idade = idade;
-	}
-	
-	//Metodos
-	public void emitirSom() {
-		System.out.println("Som do animal!");
-	}
-	//Encapsulamento - getters and setters
 
+	public Animal() {
+		
+	}
+
+	// Metodos
+	public void emitirSom() {
+		System.out.println("Som...");
+	}
+
+	public void correr() {
+		
+	}
+
+	public void subirArvore() {
+		
+	}
+	
+	// Encapsulamento - getters and setters
 	public String getNome() {
 		return nome;
 	}
 
-	public void setNome(String nome) {
+	public void setNome(final String nome) {
 		this.nome = nome;
 	}
 
@@ -29,8 +35,8 @@ public class Animal {
 		return idade;
 	}
 
-	public void setIdade(int idade) {
+	public void setIdade(final int idade) {
 		this.idade = idade;
 	}
-	
+
 }

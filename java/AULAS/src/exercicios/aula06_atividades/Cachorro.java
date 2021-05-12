@@ -1,13 +1,11 @@
 package exercicios.aula06_atividades;
 
 public class Cachorro extends Animal {
-	//contrutor
-	public Cachorro(String nome, int idade) {
-		super(nome, idade);
-		nome = "Cachorro";
-		idade = 8;	
+	public String getNome() {
+		return "Nome do animal: "+super.getNome();
 	}
-	//Metodos
+	
+	// Metodos
 	public void correr() {
 		System.out.println("Cachorro correndo...");
 	}
@@ -16,6 +14,4 @@ public class Cachorro extends Animal {
 		System.out.println("AU AU!");
 	}
 	
-	
-
 }

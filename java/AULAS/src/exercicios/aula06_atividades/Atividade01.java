@@ -7,25 +7,33 @@ public class Atividade01 {
 		Animal:
 	 */
 	public static void main(String[] args) {
+	    
+		Cachorro cachorro = new Cachorro();
+		cachorro.setNome("Azulão");
+		cachorro.setIdade(8);
 		
-		Cachorro cachorro = new Cachorro("Cachorro", 8);
-		Cavalo cavalo = new Cavalo("Cavalo",15);
-		Preguica preguica = new Preguica("Preguiça",5);
+		Cavalo cavalo = new Cavalo();
+		cavalo.setNome("Plotca");
+		cavalo.setIdade(15);
+	
+		Preguica preguica = new Preguica();
+		preguica.setNome("Pri");
+		preguica.setIdade(12);
+	
 		
-		System.out.println("Animal: "+cachorro.getNome()+" idade "+cachorro.getIdade());
+		Animal[] animais = new Animal[3];
+		animais[0] = cachorro;
+		animais[1] = cavalo;
+		animais[2] = preguica;
 		
-		cachorro.correr();
-		cachorro.emitirSom();
-		
-		System.out.println("\nAnimal: "+cavalo.getNome()+" idade "+cavalo.getIdade());
-		
-		cavalo.correr();
-		cavalo.emitirSom();
-		
-		System.out.println("\nAnimal: "+preguica.getNome()+" idade "+preguica.getIdade());
-		
-		preguica.subirArvore();
-		preguica.emitirSom();
+		for(Animal pet:animais) {
+			System.out.println(pet.getNome());
+			System.out.println(pet.getIdade());
+			pet.emitirSom();
+			pet.correr();
+			pet.subirArvore();
+			System.out.println();
+		}
 		
 	}
 
