@@ -2,12 +2,12 @@ package exercicios.aula06_atividades;
 
 public class Cavalo extends Animal {
 	public String getNome() {
-		return "Nome do animal: "+super.getNome();
+		return super.getNome();
 	}
 	
 	// Metodos
 	public void correr() {
-		System.out.println("Cavalo galopando...");
+		System.out.println("Cavalo está galopando...");
 	}
 	
 	public void emitirSom() {

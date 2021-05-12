@@ -10,9 +10,7 @@ public abstract class Animal {
 	}
 
 	// Metodos
-	public void emitirSom() {
-		System.out.println("Som...");
-	}
+	public abstract void emitirSom();
 
 	public void correr() {
 		

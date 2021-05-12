@@ -13,7 +13,7 @@ public class Atividade01 {
 		cachorro.setIdade(8);
 		
 		Cavalo cavalo = new Cavalo();
-		cavalo.setNome("Plotca");
+		cavalo.setNome("Plotka");
 		cavalo.setIdade(15);
 	
 		Preguica preguica = new Preguica();
@@ -21,14 +21,14 @@ public class Atividade01 {
 		preguica.setIdade(12);
 	
 		
-		Animal[] animais = new Animal[3];
+		Animal animais[] = new Animal[3];
 		animais[0] = cachorro;
 		animais[1] = cavalo;
 		animais[2] = preguica;
 		
 		for(Animal pet:animais) {
-			System.out.println(pet.getNome());
-			System.out.println(pet.getIdade());
+			System.out.println("Nome do animal: "+pet.getNome());
+			System.out.println("Idade: "+pet.getIdade());
 			pet.emitirSom();
 			pet.correr();
 			pet.subirArvore();

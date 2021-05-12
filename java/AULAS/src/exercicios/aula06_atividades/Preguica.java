@@ -2,7 +2,7 @@ package exercicios.aula06_atividades;
 
 public class Preguica extends Animal {
 	public String getNome() {
-		return "Nome do animal: "+super.getNome();
+		return super.getNome();
 	}
 
 	// Metodos
