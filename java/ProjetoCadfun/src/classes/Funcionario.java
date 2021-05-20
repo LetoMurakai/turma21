@@ -3,7 +3,7 @@ package classes;
 public class Funcionario {
 	//Atributos
 	private String  matricula;
-	protected int horasTrabalhadas;
+	protected double horasTrabalhadas;
 	protected double valorHora;
 	private String nome;
 	
@@ -13,7 +13,7 @@ public class Funcionario {
 		this.nome = nome;
 	}
 	// Sobrecarga de Construtor
-	public Funcionario(String matricula, int horasTrabalhadas, double valorHora, String nome) {
+	public Funcionario(String matricula, double horasTrabalhadas, double valorHora, String nome) {
 		this.matricula = matricula;
 		this.horasTrabalhadas = horasTrabalhadas;
 		this.valorHora = valorHora;
@@ -34,11 +34,11 @@ public class Funcionario {
 		this.matricula = matricula;
 	}
 
-	public int getHorasTrabalhadas() {
+	public double getHorasTrabalhadas() {
 		return horasTrabalhadas;
 	}
 
-	public void setHorasTrabalhadas(int horasTrabalhadas) {
+	public void setHorasTrabalhadas(double horasTrabalhadas) {
 		this.horasTrabalhadas = horasTrabalhadas;
 	}
 

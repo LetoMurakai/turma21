@@ -1,21 +1,21 @@
 package classes;
 
-public class Basico  extends Estudantes{
-	//Atributos
+public class Basico extends Estudante {
+
 	private int diaAniversario;
 
-	//Construtor
 	public Basico(int matricula, String cpf, int diaAniversario) {
 		super(matricula, cpf);
 		this.diaAniversario = diaAniversario;
 	}
 
-	public Basico(String nome, int matricula, String cpf, boolean status, int diaAniversario) {
-		super(nome, matricula, cpf, status);
+	public Basico(int matricula, String cpf, boolean status, int diaAniversario) {
+		super(matricula, cpf, status);
 		this.diaAniversario = diaAniversario;
 	}
 
-	//Encapsulamento - getters and setters
+	// Metodo - Getting and Settings
+
 	public int getDiaAniversario() {
 		return diaAniversario;
 	}
@@ -23,12 +23,13 @@ public class Basico  extends Estudantes{
 	public void setDiaAniversario(int diaAniversario) {
 		this.diaAniversario = diaAniversario;
 	}
-	
-	//Metodos
+
+	// SUPER e a MAE
+	// Resolvendo o Calculo de ADICIONAR nota ao aluno na DATA
 	public void bonusAniversario(int dia) {
-		if(diaAniversario == dia) {
-			super.adicionarNota((super.getPontos()*0.1));
+		if (diaAniversario == dia) {
+			super.adicionarNota(super.getPontos() * 0.1);
 		}
 	}
-	
-}//Fim classes
+
+}

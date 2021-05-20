@@ -3,7 +3,7 @@ package classes;
 public class Terceiro extends Funcionario{
 	private double adicional;
 	
-	public Terceiro(String matricula, int horasTrabalhadas, double valorHora, String nome, double adicional) {
+	public Terceiro(String matricula, double horasTrabalhadas, double valorHora, String nome, double adicional) {
 		super(matricula, horasTrabalhadas, valorHora, nome);
 		this.adicional = adicional;
 	}
