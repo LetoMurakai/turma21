@@ -7,15 +7,21 @@ Create table tb_funcionaries(
     setor varchar(40) not null,
     salario float,
     ativo boolean,
+    
     primary key (id)
 );
 
 select * from tb_funcionaries;
-
-insert into tb_funcionaries(registro, nome, setor, salario, ativo) value (12654,"Tatiane","Assistente Geral",1489.89,true);
-
+select * from tb_funcionaries order by nome asc;
+select * from tb_funcionaries order by salario desc;
 select * from tb_funcionaries where salario >= 2000.00;
 select * from tb_funcionaries where salario <= 1999.99;
 
-update tb_funcionaries set salario = 2199.98 
-where id = 2;
+insert into tb_funcionaries(registro, nome, setor, salario, ativo) value (12345,"Katarina","Departamento Geral",2133.33,true);
+insert into tb_funcionaries(registro, nome, setor, salario, ativo) value (12849,"Jobson","Programador Web",2199.98,true);
+insert into tb_funcionaries(registro, nome, setor, salario, ativo) value (12846,"Ruanei","Gerente",3229.99,true);
+insert into tb_funcionaries(registro, nome, setor, salario, ativo) value (12222,"Noemi","Marketing Digital",1899.99,true);
+insert into tb_funcionaries(registro, nome, setor, salario, ativo) value (12654,"Tatiane","Assistente Geral",1489.89,true);
+
+update tb_funcionaries set registro = 12846 
+where id = 3;
