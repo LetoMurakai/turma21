@@ -49,4 +49,4 @@ select * from tb_personagem inner join tb_classe on tb_classe.id = tb_personagem
 
 select tb_personagem.nick, tb_personagem.lvl, tb_classe.classe from tb_personagem
 inner join tb_classe on tb_classe.id = tb_personagem.classe_id
-where tb_classe.classe = "Atirador";
+where classe_id = 2;
