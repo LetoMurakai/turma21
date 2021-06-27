@@ -1,4 +1,4 @@
-package exercicios.aula4_atividades;
+package exercicios.aula04_atividades;
 
 public class Atividade1 {
 	/*1- Faça um programa que possua um vetor denominado A que armazene 6 números
